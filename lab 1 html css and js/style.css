@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, sana-serif;
+    background: #f4f4f4;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset{
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.row label{
+    width: 100px;
+}
+
+.row input{
+    flex: 1;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea{
+   display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #0056b3;
+}

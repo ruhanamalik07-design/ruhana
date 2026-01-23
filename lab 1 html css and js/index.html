@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+
+    <!--Main form container-->
+    <form action="#" method="post">
+
+        <!--personal information section-->
+        <fieldset>
+            <legend>Personal Information </legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="email" placeholder="full name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="fullname" name="email" placeholder="last name" required>
+
+            <div class="row">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            
+            <div class="row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Min. 8 characters" required minlength="6">
+
+             <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" placeholder="Retype password" required minlength="6">
+            </div>
+
+            <label for="date of birth">Date of Birth:</label>
+            <input type="date" id="date of birth" name="date of birth" required>
+
+        </fieldset>
+
+        <!--gender section-->
+        <fieldset>
+            <div class="row">
+            <legend>Gender</legend>
+
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Male
+            </label>
+
+             <label>
+                <input type="radio" name="gender" value="female" required>
+                Female
+            </label>
+
+             <label>
+                <input type="radio" name="gender" value="other" required>
+                Other
+            </label>
+            </div>
+        </fieldset>
+
+        <!--Interests Section-->
+        <fieldset>
+            <legend>Interests</legend>
+
+            <label>
+                <input type="checkbox" name="interest" value="coding">
+                Coding
+            </label>
+
+             <label>
+                <input type="checkbox" name="interest" value="music">
+                Music
+            </label>
+
+             <label>
+                <input type="checkbox" name="interest" value="sports">
+                Sports
+            </label>
+        </fieldset>
+
+        <!--country section-->
+        <fieldset>
+            <legend>Country</legend>
+
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Choose One--</option>
+                <option id="canada">Canada</option>
+                <option id="usa">USA</option>
+                <option id="uk">UK</option>
+            </select>
+        </fieldset>
+
+        <!--Message section-->
+        <fieldset>
+            <div class="row">
+            <legend>Messages:</legend>
+
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Any additional comments....." rows="4" required></textarea>
+        </div>
+        </fieldset>
+
+        <!--submit-->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
