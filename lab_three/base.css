@@ -94,3 +94,11 @@ img {
 
 /* Bonus Challenge - 2 EXTRA marks */ 
 /* make the layout responsive & mobile first design */ 
+
+/*tablet/desktop view: switch to 3 columns when screen is wider */
+@media(min-width: 768px){
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
