@@ -95,6 +95,13 @@ img {
 /* Bonus Challenge - 2 EXTRA marks */ 
 /* make the layout responsive & mobile first design */ 
 
+/*mobile first: default to a single column for small screen*/
+.cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 /*tablet/desktop view: switch to 3 columns when screen is wider */
 @media(min-width: 768px){
   .cards{
