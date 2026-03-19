@@ -113,3 +113,17 @@ button:hover {
   flex-direction: row-reverse;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
