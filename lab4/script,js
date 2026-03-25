@@ -3,3 +3,18 @@
 // Select the form and message area
 const form = document.getElementById("nameForm");
 const message = document.getElementById("message");
+
+//Add submit event listener
+form.addEventListener("submit", function(event){
+      // Prevent page from refreshing
+    event.preventDefault();
+
+    // Get the value entered by the user
+    const name = document.getElementById("username").value;
+
+    // Display welcome message dynamically
+    message.textContent = `Welcome, ${name}!`;
+
+});
+
+
